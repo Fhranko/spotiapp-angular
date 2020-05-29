@@ -11,11 +11,9 @@ export class SpotifyService {
 	getNewReleases() {
 		const headers = new HttpHeaders({
 			Authorization:
-				'Bearer BQDPDGqcMCqRwTh8LxtNFFQvH2myXqlje39XIfqm8bV6LvlYGLFZxEsOzk4q-ApSpruIO7kfDWaVaUBSpPC4VyFEeRI6MX93Jf9NziQhju4McbLbGkyxtbdybHwgdamjbGfr9sBg'
+				'Bearer BQDIcCtQbdLn2zW3v6W4pZjeche98tctcCl-6XYGSoI-d5-OgG-LcFPbtKTk7EjC4m0cXnrCNe9w1uive0iwWuoxJNvAHCDE4d_44uthh4YEYyN5Q0EuE177FkBktr56_LdUB1Jn'
 		});
 
-		this.http.get('https://api.spotify.com/v1/browse/new-releases', { headers }).subscribe((data) => {
-			console.log(data);
-		});
+		return this.http.get('https://api.spotify.com/v1/browse/new-releases', { headers });
 	}
 }
