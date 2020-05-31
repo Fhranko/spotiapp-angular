@@ -7,14 +7,14 @@ import { map } from 'rxjs/operators';
 })
 export class SpotifyService {
 	constructor(private http: HttpClient) {
-		console.log('Servicio de spotifi corriendo');
+		console.log('Servicio de spotify corriendo');
 	}
 
 	getQuery(query: string) {
 		const url = `https://api.spotify.com/v1/${query}`;
 		const headers = new HttpHeaders({
 			Authorization:
-				'Bearer BQB7UcgkSKSJFNcOrrRFKHTH96UsoK2AsiQPd22mEuRwkRha0c0qX82PNiMGRodHH-00IxDBGkRLlmwd2PDPPnImDqclg2YKYAFUEwwmGnslJ7sHQZVAW_HRafCLbZ6MKJvFRGdQ'
+				'Bearer BQA5_mAtWhUMf5YlS9-oDlL0rjAYiQ7irARQEuSPrj2t5VryeMhVy0O8tJdgfXU7ukgiCwG5d4z7wVw7k16O_R1tl2j79-ZbBhRyt8DwIRBYEbeD4WpimJ0g9PKUDWCxkr5AEMtv'
 		});
 
 		return this.http.get(url, { headers });
