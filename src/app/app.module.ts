@@ -16,9 +16,10 @@ import { SpotifyService } from './services/spotify.service';
 // Importar Rutas
 import { ROUTES } from './app.routes';
 import { TargetasComponent } from './components/targetas/targetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
-	declarations: [ AppComponent, HomeComponent, SearchComponent, ArtistaComponent, NavbarComponent, TargetasComponent ],
+	declarations: [ AppComponent, HomeComponent, SearchComponent, ArtistaComponent, NavbarComponent, TargetasComponent, LoadingComponent ],
 	imports: [ BrowserModule, HttpClientModule, RouterModule.forRoot(ROUTES, { useHash: true }) ],
 	providers: [ SpotifyService ],
 	bootstrap: [ AppComponent ]
