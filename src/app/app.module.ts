@@ -17,9 +17,19 @@ import { SpotifyService } from './services/spotify.service';
 import { ROUTES } from './app.routes';
 import { TargetasComponent } from './components/targetas/targetas.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { NoimagePipe } from './pipes/noimage.pipe';
 
 @NgModule({
-	declarations: [ AppComponent, HomeComponent, SearchComponent, ArtistaComponent, NavbarComponent, TargetasComponent, LoadingComponent ],
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		SearchComponent,
+		ArtistaComponent,
+		NavbarComponent,
+		TargetasComponent,
+		LoadingComponent,
+		NoimagePipe
+	],
 	imports: [ BrowserModule, HttpClientModule, RouterModule.forRoot(ROUTES, { useHash: true }) ],
 	providers: [ SpotifyService ],
 	bootstrap: [ AppComponent ]
