@@ -4,8 +4,9 @@ Proyecto desarrollado con Angular y Bootstrap usando la API de Spotify (haciendo
 
 ## Instrucciones:
 
-1. Escribe `ng serve` para levantar un servidor local con Angular.
-2. Navega al `http://localhost:4200/`. La aplicacion automáticamente se recargará con los cambios que se hagan.
+1. Descarga las dependencias con `npm install` 
+2. Escribe `ng serve` para levantar un servidor local con Angular.
+3. Navega al `http://localhost:4200/`. La aplicacion automáticamente se recargará con los cambios que se hagan.
 
 IMPORTANTE: Para correr la app de manera local es necesario un Token de autenticación proporcionada por Spotify, este token expira cada hora. Más información en https://developer.spotify.com/documentation/general/guides/authorization-guide/
 
